@@ -1,10 +1,10 @@
 <?php
 /**
- * WBCE CMS
+ * WebsiteBaker Community Edition (WBCE)
  * Way Better Content Editing.
- * Visit https://wbce.org to learn more and to join the community.
+ * Visit http://wbce.org to learn more and to join the community.
  *
- * @copyright       WBCE Project (2015-)
+ * @copyright       WBCE Project (2015-2019)
  * @category        opffilter
  * @package         OPF Auto Placeholder
  * @version         1.3.3

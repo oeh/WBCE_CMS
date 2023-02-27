@@ -1,13 +1,13 @@
 <?php
 /**
- * WBCE CMS
+ * WebsiteBaker Community Edition (WBCE)
  * Way Better Content Editing.
- * Visit https://wbce.org to learn more and to join the community.
+ * Visit http://wbce.org to learn more and to join the community.
  *
  * @copyright       WBCE Project (2015-2019)
  * @category        opffilter
- * @package         OPF Move Contents
- * @version         1.0.8
+ * @package         OPF Move Stuff
+ * @version         1.0.7
  * @authors         Martin Hecht (mrbaseman)
  * @link            https://forum.wbce.org/viewtopic.php?id=176
  * @license         GNU GPL2 (or any later version)
@@ -37,10 +37,10 @@ Settings::Set('opf_move_stuff'.'_be',1, false);
 
 include_once(WB_PATH.'/modules/outputfilter_dashboard/functions.php');
 
-if(!opf_is_registered('Move Contents')) return FALSE;
+if(!opf_is_registered('Move Stuff')) return FALSE;
 
-if(opf_get_type('Move Contents',FALSE) != OPF_TYPE_PAGE_LAST){
-    return opf_unregister_filter('Move Contents')
+if(opf_get_type('Move Stuff',FALSE) != OPF_TYPE_PAGE_LAST){
+    return opf_unregister_filter('Move Stuff')
     && require(WB_PATH.'/modules/mod_opf_move_stuff/install.php');
 }
 

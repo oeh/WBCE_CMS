@@ -1,13 +1,13 @@
 <?php
 /**
- * WBCE CMS
+ * WebsiteBaker Community Edition (WBCE)
  * Way Better Content Editing.
- * Visit https://wbce.org to learn more and to join the community.
+ * Visit http://wbce.org to learn more and to join the community.
  *
- * @copyright       WBCE Project (2015-)
+ * @copyright       WBCE Project (2015-2019)
  * @category        opffilter
  * @package         OPF Auto Placeholder
- * @version         1.3.4
+ * @version         1.3.3
  * @authors         Martin Hecht (mrbaseman)
  * @link            https://forum.wbce.org/viewtopic.php?id=176
  * @license         GNU GPL2 (or any later version)
@@ -19,7 +19,6 @@
 /*
  *      CHANGELOG
  *
- *      1.3.4   2023-02-25		- Update description
  *      1.3.3   2019-07-05      - by default enable filter on searchresults
  *      1.3.2   2019-04-22      - include opf functions in upgrade script
  *      1.3.1   2019-03-26      - update requirements and remove older fallback
@@ -52,7 +51,7 @@ if(!defined('WB_PATH')) {
 $module_directory       = 'mod_opf_auto_placeholder';
 $module_name            = 'OPF Auto Placeholder';
 $module_function        = 'opffilter';
-$module_version         = '1.3.4';
+$module_version         = '1.3.3';
 $module_platform        = 'WBCE 1.4.x ';
 $module_author          = 'Martin Hecht (mrbaseman)';
 $module_license         = 'GNU GPL2 (or any later version)';

@@ -1,15 +1,15 @@
 <?php
 /**
- * WBCE CMS
+ * WebsiteBaker Community Edition (WBCE)
  * Way Better Content Editing.
- * Visit https://wbce.org to learn more and to join the community.
+ * Visit http://wbce.org to learn more and to join the community.
  *
  * @copyright       Ryan Djurovich (2004-2009)
  * @copyright       WebsiteBaker Org. e.V. (2009-2015)
- * @copyright       WBCE Project (2015-)
+ * @copyright       WBCE Project (2015-2021)
  * @category        opffilter
- * @package         OPF Internal Link Replacer
- * @version         1.0.7
+ * @package         OPF WB-Link
+ * @version         1.0.6
  * @authors         Martin Hecht (mrbaseman)
  * @link            https://forum.wbce.org/viewtopic.php?id=176
  * @license         GNU GPL2 (or any later version)
@@ -39,10 +39,10 @@ Settings::Set('opf_wblink',1, false);
 
 include_once(WB_PATH.'/modules/outputfilter_dashboard/functions.php');
 
-if(!opf_is_registered('Internal Link Replacer')) return FALSE;
+if(!opf_is_registered('WB-Link')) return FALSE;
 
-if(opf_get_type('Internal Link Replacer',FALSE) != OPF_TYPE_PAGE){
-    return opf_unregister_filter('Internal Link Replacer')
+if(opf_get_type('WB-Link',FALSE) != OPF_TYPE_PAGE){
+    return opf_unregister_filter('WB-Link')
     && require(WB_PATH.'/modules/mod_opf_wblink/install.php');
 }
 

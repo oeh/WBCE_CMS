@@ -6,12 +6,18 @@ if(!defined('WB_PATH')) die(header('Location: ../../index.php'));
 
 opf_register_filter(
     array(
-        'name' => 'Colorbox',
+        'name' => 'jQ ColorBox',
         'type' => OPF_TYPE_PAGE_FIRST,
         'funcname' => 'opff_jq_colorbox',
         'desc' => array(
-            'EN' => "Use class=colorbox, iframe, youtube, cslide, cfade or csingle as additional CSS class to open a link in a modal window. 5 different styles available via filter config. See http://www.jacklmoore.com/colorbox/ for details.",
-            'DE' => "Verwende class=colorbox, iframe, youtube, cslide, cfade or csingle als zusätzliche CSS-Klasse, um einen Link in einem Overlay zu öffnen. 5 verschiedene Styles per Filterkonfiguration auswählbar. Besuche http://www.jacklmoore.com/colorbox/ für Details."
+            'EN' => "This Filter provides all the scripts needed to run "
+                    . "the jQuery ColorBox Plugin. For more information go to "
+                    . "developers homepage: http://colorpowered.com/colorbox/",
+
+            'DE' => "Dieser Filter stellt das komplette Set der jQuery Colorbox "
+                    . "zur Verf&uuml;gung und kann sofort eingesetzt werden. "
+                    . "Weitere Informationen auf der Entwicklerseite (engl.) "
+                    . "http://colorpowered.com/colorbox/ "
         ),
         'file' => '{OPF:PLUGIN_PATH}/filter.php',
         'plugin' => 'opf_jq_colorbox',

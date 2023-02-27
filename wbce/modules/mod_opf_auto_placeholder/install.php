@@ -1,13 +1,13 @@
 <?php
 /**
- * WBCE CMS
+ * WebsiteBaker Community Edition (WBCE)
  * Way Better Content Editing.
- * Visit https://wbce.org to learn more and to join the community.
+ * Visit http://wbce.org to learn more and to join the community.
  *
- * @copyright       WBCE Project (2015-)
+ * @copyright       WBCE Project (2015-2019)
  * @category        opffilter
  * @package         OPF Auto Placeholder
- * @version         1.3.4
+ * @version         1.3.3
  * @authors         Martin Hecht (mrbaseman)
  * @link            https://forum.wbce.org/viewtopic.php?id=176
  * @license         GNU GPL2 (or any later version)
@@ -43,10 +43,7 @@ if(defined('WB_URL'))
             'type' => OPF_TYPE_PAGE_FIRST,
             'file' => '{SYSVAR:WB_PATH}/modules/mod_opf_auto_placeholder/filter.php',
             'funcname' => 'opff_mod_opf_auto_placeholder',
-            'desc' => array(
-				'EN' => "This filter adds placeholders (hooks) which can be used for code replacements or inserts. See https://help.wbce.org/pages/de/module-programmieren/platzhalter-hooks.php for more information.",
-				'DE' => "Dieser Filter fügt Platzhalter (Hooks) ein, die für Code-Ersetzungen oder -Ergänzungen genutzt werden können. Siehe https://help.wbce.org/pages/de/module-programmieren/platzhalter-hooks.php für weitere Informationen."
-			),
+            'desc' => "Auto Add Placeholders for Javascript, CSS, Metas and Title",
             'active' => (!class_exists('Settings') || (Settings::Get('opf_auto_placeholder', 1)==1))?1:0,
             'allowedit' => 0,
             'pages_parent' => 'all,backend,search'

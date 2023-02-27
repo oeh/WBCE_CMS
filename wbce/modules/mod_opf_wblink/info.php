@@ -1,15 +1,15 @@
 <?php
 /**
- * WBCE CMS
+ * WebsiteBaker Community Edition (WBCE)
  * Way Better Content Editing.
- * Visit https://wbce.org to learn more and to join the community.
+ * Visit http://wbce.org to learn more and to join the community.
  *
  * @copyright       Ryan Djurovich (2004-2009)
  * @copyright       WebsiteBaker Org. e.V. (2009-2015)
- * @copyright       WBCE Project (2015-)
+ * @copyright       WBCE Project (2015-2021)
  * @category        opffilter
- * @package         OPF Internal Link Replacer
- * @version         1.0.7
+ * @package         OPF WB-Link
+ * @version         1.0.6
  * @authors         Martin Hecht (mrbaseman)
  * @link            https://forum.wbce.org/viewtopic.php?id=176
  * @license         GNU GPL2 (or any later version)
@@ -21,7 +21,6 @@
 /*
  *      CHANGELOG
  *
- *		1.0.7	2023-02-25		- rename, update description (florian)
  *      1.0.6   2020-11-15      - remove MYSQLI_ASSOC
  *      1.0.5   2019-07-05      - by default enable filter on searchresults
  *      1.0.4   2019-04-22      - include opf functions in upgrade script
@@ -44,9 +43,9 @@ if(!defined('WB_PATH')) {
 
 
 $module_directory       = 'mod_opf_wblink';
-$module_name            = 'OPF Internal Link Replacer';
+$module_name            = 'OPF WB-Link';
 $module_function        = 'opffilter';
-$module_version         = '1.0.7';
+$module_version         = '1.0.6';
 $module_platform        = 'WBCE 1.2.x ';
 $module_author          = 'Martin Hecht (mrbaseman)';
 $module_license         = 'GNU GPL2 (or any later version)';

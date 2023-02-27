@@ -1,15 +1,15 @@
 <?php
 /**
- * WBCE CMS
+ * WebsiteBaker Community Edition (WBCE)
  * Way Better Content Editing.
- * Visit https://wbce.org to learn more and to join the community.
+ * Visit http://wbce.org to learn more and to join the community.
  *
  * @copyright       Ryan Djurovich (2004-2009)
  * @copyright       WebsiteBaker Org. e.V. (2009-2015)
- * @copyright       WBCE Project (2015-)
+ * @copyright       WBCE Project (2015-2021)
  * @category        opffilter
- * @package         OPF Internal Link Replacer
- * @version         1.0.7
+ * @package         OPF WB-Link
+ * @version         1.0.6
  * @authors         Martin Hecht (mrbaseman)
  * @link            https://forum.wbce.org/viewtopic.php?id=176
  * @license         GNU GPL2 (or any later version)
@@ -37,18 +37,15 @@ if(defined('WB_URL'))
 
         require_once(WB_PATH.'/modules/mod_opf_wblink/upgrade.php');
 
-        if(opf_is_registered('Internal Link Replacer')) return TRUE; // filter already registered
+        if(opf_is_registered('WB-Link')) return TRUE; // filter already registered
 
         // install filter
         return opf_register_filter(array(
-            'name' => 'Internal Link Replacer',
+            'name' => 'WB-Link',
             'type' => OPF_TYPE_PAGE,
             'file' => '{SYSVAR:WB_PATH}/modules/mod_opf_wblink/filter.php',
             'funcname' => 'opff_mod_opf_wblink',
-            'desc' => array(
-				'EN' => "When this filter is active, internal links can be set with the shortcode [wblinkXX] as URL (i.e. [wblink12]  = URL of the page with the page-ID 12).",
-				'DE' => "Ist dieser Filter aktiviert, können Adressen von internen Seiten als [wblinkXX] angegeben werden (z.B. [wblink12] = URL der seite mit der Page-ID 12)."
-			),
+            'desc' => "change internal wblinkxx into real URLs",
             'active' => (!class_exists('Settings') || (Settings::Get('opf_wblink', 1)==1))?1:0,
             'allowedit' => 0,
             'pages_parent' => 'all,search'
